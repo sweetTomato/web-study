@@ -1,36 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT</title>
+    <!--BootStrap codes-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TODO LIST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+    <!--Link my CSS File-->
+    <link rel="stylesheet" href="./main.css">
+
+    <!--Link Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
-    <h1>H1태그</h1>
-    <h2>H2태그</h2>
-    <h3>H3태그</h3>
-    
-    <div>div-영역을 갖춤</div>
-    <div>div-영역을 갖춤2</div>
+    <div class="container" id="container">
+        <h3>TO DO LIST</h3>
 
-    <p>긴 문장을 쓸 때 이용되는 p태그</p>
-    <p>긴 문장을 쓸 때 <span style="color:palevioletred">span태그도 이용해서</span>
-    작성이 가능하다.</p>
+        <div id="sub-container">
+            <ul class="list-group" id="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A list item
+                    <span class="badge bg-primary rounded-pill">삭제</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A second list item
+                    <span class="badge bg-primary rounded-pill">삭제</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A third list item
+                    <span class="badge bg-primary rounded-pill">삭제</span>
+                </li>
+            </ul>
+        </div>
 
-    <ul>
-        <li>순서가 없는 항목 1</li>
-        <li>순서가 없는 항목 2</li>
-    </ul>
-    <hr/>
-    
-    <input type="text"/>
-    <input type="number"/>
-    <button>PRESS BUTTON</button>
+        <div class="input-group mb-3" id="input-group">
+            <input type="text" class="form-control" id="input-area" placeholder="Write your plan!"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-area"
+                onclick="clickedButton()">추가</button>
+        </div>
 
-    <br/>
-    <br/>
-    <img src="janmangLoopy.jpeg" width="200"/>
+    </div>
+    <script>
+
+        function clickedButton() {
+            alert("버튼이 눌렸다!");
+        }
+
+    </script>
 
 </body>
 

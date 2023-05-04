@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                // 변수에 대해 알아보자: 숫자, 문자, boolean
+                let a = "값"; //string 타입
+        let b = 100; //intiger 타입
+        let c = true; //boolean 타입
+
+        //string간의 연산
+        let a2 = "은 뭘까요?"
+        let a3 = a + a2;
+        console.log(a3);
+
+        //int간의 연산
+        let b2 = 200;
+        let b3 = b + b2;
+        console.log(b3);
+
+        //string + int 연산
+        let ab = a + b;
+        console.log(ab)
+
+        //boolean 비교 연산
+        let c2 = 10 > 5;
+        console.log(c2);
+
+        //사칙연산 및 나머지연산
+        console.log(b - b2);
+        console.log(b * b2);
+        console.log(b / b2);
+        console.log(b % b2);
+
+
+
+        //문자를 표현하는 방식
+        let str2 = "문자";
+        let str3 = '문자';
+        let str4 = `문자`;
+
+        console.log(`저의 나이는 ${b}`);
+
+        //배열
+        let arr = [1, 2, 3, 4, '문자', true, false];
+
+        arr.push("값");
+        console.log(arr);
+        console.log(arr[4]);
+
+        //객체
+        let obj = {
+            "key":"value",
+            "key2":"value2",
+            "key3":"value3"
+        }
+
+        console.log(obj);
+        console.log(obj.key);
+
+
+        //객체+배열 혼합 사용
+        let arrObj = [
+            {"key0":"value0", "key1":"value1"},
+            {"key2":"value2", "key3":"value3"},
+        ];
+        
+        console.log(arrObj);
+    </script>
+</body>
+</html>
