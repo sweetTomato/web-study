@@ -1,76 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-                // 변수에 대해 알아보자: 숫자, 문자, boolean
-                let a = "값"; //string 타입
-        let b = 100; //intiger 타입
-        let c = true; //boolean 타입
+        // // 변수에 대해 알아보자: 숫자, 문자, boolean
+        // let a = "값"; //string 타입
+        // let b = 100; //intiger 타입
+        // let c = true; //boolean 타입
 
-        //string간의 연산
-        let a2 = "은 뭘까요?"
-        let a3 = a + a2;
-        console.log(a3);
+        // //string간의 연산
+        // let a2 = "은 뭘까요?"
+        // let a3 = a + a2;
+        // console.log(a3);
 
-        //int간의 연산
-        let b2 = 200;
-        let b3 = b + b2;
-        console.log(b3);
+        // //int간의 연산
+        // let b2 = 200;
+        // let b3 = b + b2;
+        // console.log(b3);
 
-        //string + int 연산
-        let ab = a + b;
-        console.log(ab)
+        // //string + int 연산
+        // let ab = a + b;
+        // console.log(ab)
 
-        //boolean 비교 연산
-        let c2 = 10 > 5;
-        console.log(c2);
+        // //boolean 비교 연산
+        // let c2 = 10 > 5;
+        // console.log(c2);
 
-        //사칙연산 및 나머지연산
-        console.log(b - b2);
-        console.log(b * b2);
-        console.log(b / b2);
-        console.log(b % b2);
-
-
-
-        //문자를 표현하는 방식
-        let str2 = "문자";
-        let str3 = '문자';
-        let str4 = `문자`;
-
-        console.log(`저의 나이는 ${b}`);
-
-        //배열
-        let arr = [1, 2, 3, 4, '문자', true, false];
-
-        arr.push("값");
-        console.log(arr);
-        console.log(arr[4]);
-
-        //객체
-        let obj = {
-            "key":"value",
-            "key2":"value2",
-            "key3":"value3"
-        }
-
-        console.log(obj);
-        console.log(obj.key);
+        // //사칙연산 및 나머지연산
+        // console.log(b - b2);
+        // console.log(b * b2);
+        // console.log(b / b2);
+        // console.log(b % b2);
 
 
-        //객체+배열 혼합 사용
-        let arrObj = [
-            {"key0":"value0", "key1":"value1"},
-            {"key2":"value2", "key3":"value3"},
-        ];
+
+        // //문자를 표현하는 방식
+        // let str2 = "문자";
+        // let str3 = '문자';
+        // let str4 = `문자`;
+
+        // console.log(`저의 나이는 ${b}`);
+
+        // //배열
+        // let arr = [1, 2, 3, 4, '문자', true, false];
+
+        // arr.push("값");
+        // console.log(arr);
+        // console.log(arr[4]);
+
+        // //객체
+        // let obj = {
+        //     "key": "value",
+        //     "key2": "value2",
+        //     "key3": "value3"
+        // }
+
+        // console.log(obj);
+        // console.log(obj.key);
+
+
+        // //객체+배열 혼합 사용
+        // let arrObj = [
+        //     { "key0": "value0", "key1": "value1" },
+        //     { "key2": "value2", "key3": "value3" },
+        // ];
+
+        // console.log(arrObj);
+
+
+
+        // //객체+배열 혼합 사용2
+        // console.log("obj 객체 출력");
+        // let api = {
+        //     "page1": 1,
+        //     "total_results": 10000,
+        //     "total_pages": 500,
+        //     "results": [
+        //         {
+        //             "popularity": 3130.643,
+        //             "vote_count": 143,
+        //             "video": false,
+        //             "genre_ids": [
+        //                 18,
+        //                 878,
+        //                 53
+        //             ],
+        //             "title": "2067",
+        //             "vote_average": 5.8
+        //         }
+        //     ]
+        // };
+
+        // console.log(api);
+        // console.log(api.results[0].vote_count);
+        // console.log(api.results[0].genre_ids[2]);
+
+
+        // //반복문 for 와 조건문 if-else
+        // let arr_for = ["fitst val", "second val", "third val",
+        //     "fourth val", "fifth val"];
         
-        console.log(arrObj);
+        // for (let i = 0; i < arr_for.length; i++){
+        //     console.log(i+":"+arr_for[i]);
+            
+        //     if (arr_for[i] == "third val"){
+        //         console.log("third value입니다.");
+        //     }
+        //     else{
+        //         console.log("다른 값입니다.")
+        //     }
+        // }
+
+
+        // //함수 사용하기
+        // function printVal(){
+        //     console.log("값을 출력하는 함수");
+        // }
+
+        // function setVal(){
+        //     return 10;
+        // }
+
+        // function addVal(num1, num2){
+        //     return num1+num2;
+        // }
+
+        // printVal();
+
+        // let y = setVal();
+        // console.log(y);
+        
+        // y = addVal(20,y);
+        // console.log(y);
+
+
+
+        let str = "자-바-스-크-립-트";
+        let str2 = str.split("-");
+        console.log(str2);
+
+        let str3 = str2.join("+");
+        console.log(str3);
+
+        console.log(str3.indexOf("바"));
+
+        let arr = [1,2,3,4,5];
+        console.log(arr.indexOf(1));
+
+
+
     </script>
 </body>
+
 </html>

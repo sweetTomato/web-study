@@ -1,0 +1,18 @@
+* {
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Gugi', cursive;
+}
+
+body {
+    background-color: #333;
+}
+
+#jumbotron {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#review-button{
+    width:100%;
+}
