@@ -1,0 +1,92 @@
+* {
+    font-family: 'Bruno Ace', cursive;
+}
+
+body {
+    font-family: 'Bruno Ace', cursive;
+    height: 100vh;
+    /* background: url(./bremen-bg-blk.jpg) no-repeat center; */
+    background-color: #141414;
+}
+
+#subtitleBox{
+    margin-top: 150px;
+    color:#ccffe4;
+    text-align: center;
+}
+
+#container{
+    color: #ccffe4;
+    text-align: center;
+    border: 2.5px solid #ccffe4;
+    width:600px;
+    height:500px;
+    margin-top: 35px;
+    padding-top:25px;
+    padding-left:20px;
+    padding-right:20px;    
+} 
+
+
+#sub-container{
+    text-align: center;
+    border: solid #ccffe4;
+    /* background-color:#ccffe4; */
+    width:100%;
+    height:350px;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* overflow-wrap: nomral; */
+    overflow-y: scroll;
+    /* scrollbar-color: black;
+    scrollbar-width:thin; */
+    /* scrollbar-color: black; */
+    /* overflow: overlay; */
+}
+
+#sub-container::-webkit-scrollbar{
+    width:5px;
+}
+
+#sub-container::-webkit-scrollbar-thumb{
+    background-color: rgba(204,255,228,0.5);
+    border-radius: 8px;
+}
+
+#sub-container::-webkit-scrollbar-track{
+    display:none;
+}
+
+#list-group{
+    padding-top: 10px;
+}
+
+.list-group-item{
+    color:white;
+    background-color: #141414 !important;
+    border: 2.5px !important;
+    border-bottom: 2.5px dotted #ccffe4 !important;
+}
+
+.bg-primary{
+    border: solid 1.5px #ccffe4;
+    background-color: #141414 !important;
+}
+
+#input-group{
+    margin-top:10px;
+}
+
+#input-area{
+    margin-top: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#button-area{
+    margin-top: 5px;
+    border: 2px solid #ccffe4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:#ccffe4;
+}
